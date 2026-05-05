@@ -120,7 +120,7 @@ const Navbar = () => {
           ))}
         </div>
         <div className="w-px h-5 bg-stroke mx-2 hidden sm:block shrink-0" />
-        <a href="https://wa.me/5524999015018" target="_blank" rel="noreferrer" className="hidden sm:flex bg-accent hover:bg-[#00997a] transition-colors rounded-full text-xs px-4 py-2 text-white font-medium items-center gap-1.5 shrink-0 shadow-[0_0_15px_rgba(0,121,98,0.4)] hover:shadow-[0_0_20px_rgba(0,121,98,0.6)]">
+        <a href="https://wa.me/5524999015018?text=Ol%C3%A1%20Rafael!%20Vim%20pelo%20seu%20site%20e%20gostaria%20de%20agendar%20uma%20consulta%20nutricional." target="_blank" rel="noreferrer" className="hidden sm:flex bg-accent hover:bg-[#00997a] transition-colors rounded-full text-xs px-4 py-2 text-white font-medium items-center gap-1.5 shrink-0 shadow-[0_0_15px_rgba(0,121,98,0.4)] hover:shadow-[0_0_20px_rgba(0,121,98,0.6)]">
           Agendar <ArrowUpRight className="w-3 h-3" />
         </a>
       </div>
@@ -166,7 +166,7 @@ const Hero = () => {
         </p>
 
         <div className="blur-in mt-2 flex flex-col sm:flex-row gap-4">
-          <a href="https://wa.me/5524999015018" target="_blank" rel="noreferrer" className="bg-accent hover:bg-[#00997a] text-white rounded-full text-sm md:text-base font-medium px-8 py-4 transition-all hover:-translate-y-1 shadow-[0_0_20px_rgba(0,121,98,0.5)] hover:shadow-[0_0_30px_rgba(0,121,98,0.7)] flex items-center justify-center gap-2 text-center w-full sm:w-auto">
+          <a href="https://wa.me/5524999015018?text=Ol%C3%A1%20Rafael!%20Vim%20pelo%20seu%20site%20e%20gostaria%20de%20agendar%20uma%20consulta%20nutricional." target="_blank" rel="noreferrer" className="bg-accent hover:bg-[#00997a] text-white rounded-full text-sm md:text-base font-medium px-8 py-4 transition-all hover:-translate-y-1 shadow-[0_0_20px_rgba(0,121,98,0.5)] hover:shadow-[0_0_30px_rgba(0,121,98,0.7)] flex items-center justify-center gap-2 text-center w-full sm:w-auto">
             AGENDAR CONSULTA <ArrowRight className="w-4 h-4" />
           </a>
         </div>
@@ -292,7 +292,7 @@ const Performance = () => {
                 </li>
               ))}
             </ul>
-            <a href="https://wa.me/5524999015018" target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 bg-white text-bg font-medium px-6 py-3 rounded-full hover:bg-gray-200 transition-colors text-sm">
+            <a href="https://wa.me/5524999015018?text=Ol%C3%A1%20Rafael!%20Vim%20pelo%20seu%20site%20e%20gostaria%20de%20agendar%20uma%20consulta%20nutricional." target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 bg-white text-bg font-medium px-6 py-3 rounded-full hover:bg-gray-200 transition-colors text-sm">
                Preparar para o próximo nível <ArrowRight className="w-4 h-4" />
             </a>
           </motion.div>
@@ -344,7 +344,7 @@ const Sobre = () => {
               </p>
             </div>
 
-            <a href="https://wa.me/5524999015018" target="_blank" rel="noreferrer" className="inline-flex bg-accent hover:bg-[#00997a] text-white rounded-full px-6 py-3 transition-all hover:-translate-y-1 shadow-[0_0_20px_rgba(0,121,98,0.3)] font-medium items-center gap-2 text-sm md:text-base w-full sm:w-auto justify-center">
+            <a href="https://wa.me/5524999015018?text=Ol%C3%A1%20Rafael!%20Vim%20pelo%20seu%20site%20e%20gostaria%20de%20agendar%20uma%20consulta%20nutricional." target="_blank" rel="noreferrer" className="inline-flex bg-accent hover:bg-[#00997a] text-white rounded-full px-6 py-3 transition-all hover:-translate-y-1 shadow-[0_0_20px_rgba(0,121,98,0.3)] font-medium items-center gap-2 text-sm md:text-base w-full sm:w-auto justify-center">
                Agendar Consulta <ArrowRight className="w-4 h-4" />
             </a>
           </motion.div>
@@ -487,7 +487,7 @@ const Depoimentos = () => {
       </div>
       
       <div className="max-w-[1200px] mx-auto text-center mt-16 relative z-10">
-         <a href="https://wa.me/5524999015018" target="_blank" rel="noreferrer" className="inline-flex bg-accent hover:bg-[#00997a] text-white rounded-full px-10 py-4 transition-all hover:-translate-y-1 shadow-[0_0_20px_rgba(0,121,98,0.3)] items-center gap-3 font-semibold text-sm md:text-base">
+         <a href="https://wa.me/5524999015018?text=Ol%C3%A1%20Rafael!%20Vim%20pelo%20seu%20site%20e%20gostaria%20de%20agendar%20uma%20consulta%20nutricional." target="_blank" rel="noreferrer" className="inline-flex bg-accent hover:bg-[#00997a] text-white rounded-full px-10 py-4 transition-all hover:-translate-y-1 shadow-[0_0_20px_rgba(0,121,98,0.3)] items-center gap-3 font-semibold text-sm md:text-base">
             Quero ter esses resultados <ArrowRight className="w-5 h-5" />
          </a>
       </div>
@@ -547,7 +547,7 @@ const Garantias = () => {
               transition={{ duration: 0.8, delay: 0.2 }}
               viewport={{ once: true }}
              >
-               <a href="https://wa.me/5524999015018?text=Ol%C3%A1%20Rafael%2C%20gostaria%20de%20agendar%20uma%20consulta%20nutricional!" target="_blank" rel="noreferrer" className="block w-full rounded-[30px] md:rounded-[40px] overflow-hidden shadow-xl hover:scale-[1.02] transition-transform">
+               <a href="https://wa.me/5524999015018?text=Ol%C3%A1%20Rafael!%20Vim%20pelo%20seu%20site%20e%20gostaria%20de%20agendar%20uma%20consulta%20nutricional." target="_blank" rel="noreferrer" className="block w-full rounded-[30px] md:rounded-[40px] overflow-hidden shadow-xl hover:scale-[1.02] transition-transform">
                  <img src="/images/suporte-exclusivo.webp" alt="Suporte Exclusivo" className="w-full h-auto object-cover" />
                </a>
              </motion.div>
@@ -558,7 +558,7 @@ const Garantias = () => {
               transition={{ duration: 0.8, delay: 0.4 }}
               viewport={{ once: true }}
              >
-               <a href="https://wa.me/5524999015018?text=Ol%C3%A1%20Rafael%2C%20gostaria%20de%20agendar%20uma%20consulta%20nutricional!" target="_blank" rel="noreferrer" className="block w-full rounded-[30px] md:rounded-[40px] overflow-hidden shadow-xl hover:scale-[1.02] transition-transform">
+               <a href="https://wa.me/5524999015018?text=Ol%C3%A1%20Rafael!%20Vim%20pelo%20seu%20site%20e%20gostaria%20de%20agendar%20uma%20consulta%20nutricional." target="_blank" rel="noreferrer" className="block w-full rounded-[30px] md:rounded-[40px] overflow-hidden shadow-xl hover:scale-[1.02] transition-transform">
                  <img src="/images/AGENDE.webp" alt="Agende sua consulta" className="w-full h-auto object-cover" />
                </a>
              </motion.div>
@@ -569,7 +569,7 @@ const Garantias = () => {
               transition={{ duration: 0.8, delay: 0.6 }}
               viewport={{ once: true }}
              >
-               <a href="https://wa.me/5524999015018?text=Ol%C3%A1%20Rafael%2C%20gostaria%20de%20agendar%20uma%20consulta%20nutricional!" target="_blank" rel="noreferrer" className="block w-full rounded-[30px] md:rounded-[40px] overflow-hidden shadow-xl hover:scale-[1.02] transition-transform">
+               <a href="https://wa.me/5524999015018?text=Ol%C3%A1%20Rafael!%20Vim%20pelo%20seu%20site%20e%20gostaria%20de%20agendar%20uma%20consulta%20nutricional.?text=Ol%C3%A1%20Rafael%2C%20gostaria%20de%20agendar%20uma%20consulta%20nutricional!" target="_blank" rel="noreferrer" className="block w-full rounded-[30px] md:rounded-[40px] overflow-hidden shadow-xl hover:scale-[1.02] transition-transform">
                  <img src="/images/IMGG-CTA.webp" alt="Consultoria" className="w-full h-auto object-cover" />
                </a>
              </motion.div>
