@@ -394,7 +394,7 @@ const Localizacao = () => {
             whileInView={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
-            className="w-full relative rounded-3xl overflow-hidden shadow-[0_0_50px_rgba(0,121,98,0.2)] border border-stroke/50 order-1 lg:order-2 aspect-[4/3] lg:aspect-auto"
+            className="w-full relative rounded-3xl overflow-hidden shadow-[0_0_50px_rgba(0,121,98,0.2)] border border-stroke/50 order-1 lg:order-2 aspect-[16/10] sm:aspect-[4/3] lg:aspect-square"
           >
             <img src="/images/LOCALIZACAO-V3.webp" alt="Localização" className="w-full h-full object-cover object-center" />
             <div className="absolute inset-0 bg-gradient-to-t from-bg via-transparent to-transparent opacity-40 pointer-events-none" />
