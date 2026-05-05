@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-bg text-text-primary font-body antialiased selection:bg-accent selection:text-white;
+    overflow-x: hidden;
+  }
+}
+
+@layer utilities {
+  .accent-gradient {
+    background: linear-gradient(90deg, #C4E2DC 0%, #007962 100%);
+  }
+}
+
+/* Glass & Card styles */
+.glass-panel {
+  background: rgba(1, 26, 18, 0.6);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(196, 226, 220, 0.1);
+}
+
+.bento-card {
+  @apply relative bg-surface border border-stroke rounded-3xl overflow-hidden transition-all duration-300 hover:-translate-y-1 hover:border-light/30;
+}
+
+/* Hide scrollbar */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Marquee animations — pure CSS, GPU-accelerated */
+@keyframes marquee-left {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+@keyframes marquee-right {
+  0% { transform: translateX(-50%); }
+  100% { transform: translateX(0); }
+}
+
+.marquee-left {
+  animation: marquee-left 40s linear infinite;
+}
+.marquee-right {
+  animation: marquee-right 45s linear infinite;
+}
+.marquee-left.paused,
+.marquee-right.paused {
+  animation-play-state: paused;
+}
