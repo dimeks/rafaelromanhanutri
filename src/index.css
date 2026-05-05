@@ -17,6 +17,17 @@
   }
 }
 
+/* Force Light Mode Context - Anti-Dark Mode Hack */
+@media (prefers-color-scheme: dark) {
+  :root {
+    color-scheme: light;
+  }
+}
+
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
 @layer utilities {
   .accent-gradient {
     background: linear-gradient(90deg, #C4E2DC 0%, #007962 100%);
