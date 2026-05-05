@@ -546,9 +546,10 @@ const Garantias = () => {
               whileInView={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.8, delay: 0.2 }}
               viewport={{ once: true }}
-              className="w-full rounded-[30px] md:rounded-[40px] overflow-hidden shadow-xl"
              >
-               <img src="/images/suporte-exclusivo.webp" alt="Suporte Exclusivo" className="w-full h-auto object-cover" />
+               <a href="https://wa.me/5524999015018?text=Ol%C3%A1%20Rafael%2C%20gostaria%20de%20agendar%20uma%20consulta%20nutricional!" target="_blank" rel="noreferrer" className="block w-full rounded-[30px] md:rounded-[40px] overflow-hidden shadow-xl hover:scale-[1.02] transition-transform">
+                 <img src="/images/suporte-exclusivo.webp" alt="Suporte Exclusivo" className="w-full h-auto object-cover" />
+               </a>
              </motion.div>
 
              <motion.div
@@ -556,9 +557,21 @@ const Garantias = () => {
               whileInView={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.8, delay: 0.4 }}
               viewport={{ once: true }}
-              className="w-full rounded-[30px] md:rounded-[40px] overflow-hidden shadow-xl"
              >
-               <img src="/images/AGENDE.webp" alt="Agende sua consulta" className="w-full h-auto object-cover" />
+               <a href="https://wa.me/5524999015018?text=Ol%C3%A1%20Rafael%2C%20gostaria%20de%20agendar%20uma%20consulta%20nutricional!" target="_blank" rel="noreferrer" className="block w-full rounded-[30px] md:rounded-[40px] overflow-hidden shadow-xl hover:scale-[1.02] transition-transform">
+                 <img src="/images/AGENDE.webp" alt="Agende sua consulta" className="w-full h-auto object-cover" />
+               </a>
+             </motion.div>
+
+             <motion.div
+              initial={{ opacity: 0, scale: 0.95 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.8, delay: 0.6 }}
+              viewport={{ once: true }}
+             >
+               <a href="https://wa.me/5524999015018?text=Ol%C3%A1%20Rafael%2C%20gostaria%20de%20agendar%20uma%20consulta%20nutricional!" target="_blank" rel="noreferrer" className="block w-full rounded-[30px] md:rounded-[40px] overflow-hidden shadow-xl hover:scale-[1.02] transition-transform">
+                 <img src="/images/IMGG-CTA.webp" alt="Consultoria" className="w-full h-auto object-cover" />
+               </a>
              </motion.div>
           </div>
         </div>
