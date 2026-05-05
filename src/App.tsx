@@ -396,7 +396,7 @@ const Localizacao = () => {
             viewport={{ once: true }}
             className="w-full relative rounded-3xl overflow-hidden shadow-[0_0_50px_rgba(0,121,98,0.2)] border border-stroke/50 order-1 lg:order-2 aspect-[16/10] sm:aspect-[4/3] lg:aspect-square"
           >
-            <img src="/images/LOCALIZACAO-V3.webp" alt="Localização" className="w-full h-full object-cover object-center" />
+            <img src="/images/LOCALIZACAO-V3.webp" alt="Localização" className="w-full h-full object-contain" />
             <div className="absolute inset-0 bg-gradient-to-t from-bg via-transparent to-transparent opacity-40 pointer-events-none" />
           </motion.div>
         </div>
@@ -563,16 +563,6 @@ const Garantias = () => {
                </a>
              </motion.div>
 
-             <motion.div
-              initial={{ opacity: 0, scale: 0.95 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.8, delay: 0.6 }}
-              viewport={{ once: true }}
-             >
-               <a href="https://wa.me/5524999015018?text=Ol%C3%A1%20Rafael!%20Vim%20pelo%20seu%20site%20e%20gostaria%20de%20agendar%20uma%20consulta%20nutricional.?text=Ol%C3%A1%20Rafael%2C%20gostaria%20de%20agendar%20uma%20consulta%20nutricional!" target="_blank" rel="noreferrer" className="block w-full rounded-[30px] md:rounded-[40px] overflow-hidden shadow-xl hover:scale-[1.02] transition-transform">
-                 <img src="/images/IMGG-CTA.webp" alt="Consultoria" className="w-full h-auto object-cover" />
-               </a>
-             </motion.div>
           </div>
         </div>
       </div>
