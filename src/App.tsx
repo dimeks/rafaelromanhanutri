@@ -112,9 +112,9 @@ const Navbar = () => {
       <div className={`inline-flex items-center rounded-full glass-panel px-1.5 md:px-2 py-1.5 md:py-2 transition-all max-w-[95vw] md:w-auto overflow-x-auto no-scrollbar ${scrolled ? 'shadow-lg shadow-black/80 bg-bg/95 border-stroke' : 'border-white/10'}`}>
         <div className="min-w-[36px] w-9 h-9 rounded-full bg-accent flex items-center justify-center font-display italic text-[15px] font-bold text-white shadow-[0_0_10px_rgba(0,121,98,0.5)]">RR</div>
         <div className="w-px h-5 bg-stroke mx-2 shrink-0" />
-        <div className="flex items-center space-x-1 shrink-0">
-          {["Início", "Sobre", "Diferenciais", "Depoimentos"].map((link, i) => (
-            <a key={link} href={`#${link.toLowerCase()}`} className={`text-xs sm:text-sm rounded-full px-3 py-1.5 transition-colors ${i===0 ? 'text-text-primary bg-stroke/50' : 'text-muted hover:text-text-primary hover:bg-stroke/50'}`}>
+        <div className="flex items-center space-x-0.5 md:space-x-1 shrink-0">
+          {["Início", "Sobre", "Direção", "Feedbacks"].map((link, i) => (
+            <a key={link} href={`#${link.toLowerCase() === 'feedbacks' ? 'depoimentos' : (link.toLowerCase() === 'direção' ? 'diferenciais' : link.toLowerCase())}`} className={`text-[10px] sm:text-sm rounded-full px-2 md:px-3 py-1.5 transition-colors ${i===0 ? 'text-text-primary bg-stroke/50' : 'text-muted hover:text-text-primary hover:bg-stroke/50'}`}>
               {link}
             </a>
           ))}
@@ -144,7 +144,7 @@ const Hero = () => {
         <img 
           src="/images/HERO-RAFAEL-V3.webp" 
           alt="Rafael Romanha" 
-          className="w-full h-full object-cover object-[65%_20%] md:object-right" 
+          className="w-full h-full object-cover object-center md:object-right" 
         />
         {/* Degradê apenas na esquerda/baixo, deixando a parte direita (rosto dele) visível */}
         <div className="absolute inset-0 bg-gradient-to-r from-bg via-bg/60 to-transparent md:w-[70%]" />
@@ -396,7 +396,7 @@ const Localizacao = () => {
             viewport={{ once: true }}
             className="w-full relative rounded-3xl overflow-hidden shadow-[0_0_50px_rgba(0,121,98,0.2)] border border-stroke/50 order-1 lg:order-2 aspect-[4/3] lg:aspect-auto"
           >
-            <img src="/images/LOCALIZACAO-V3.webp" alt="Localização" className="w-full h-full object-cover transform hover:scale-105 transition-transform duration-700" />
+            <img src="/images/LOCALIZACAO-V3.webp" alt="Localização" className="w-full h-full object-cover object-center" />
             <div className="absolute inset-0 bg-gradient-to-t from-bg via-transparent to-transparent opacity-40 pointer-events-none" />
           </motion.div>
         </div>
