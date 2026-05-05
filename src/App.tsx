@@ -109,7 +109,7 @@ const Navbar = () => {
       transition={{ duration: 0.35, ease: "easeInOut" }}
       className="fixed top-0 left-0 right-0 z-50 flex justify-center pt-4 md:pt-6 px-4"
     >
-      <div className={`inline-flex items-center rounded-full glass-panel px-2 py-2 transition-all w-full md:w-auto overflow-x-auto no-scrollbar ${scrolled ? 'shadow-lg shadow-black/80 bg-bg/95 border-stroke' : 'border-white/10'}`}>
+      <div className={`inline-flex items-center rounded-full glass-panel px-1.5 md:px-2 py-1.5 md:py-2 transition-all max-w-[95vw] md:w-auto overflow-x-auto no-scrollbar ${scrolled ? 'shadow-lg shadow-black/80 bg-bg/95 border-stroke' : 'border-white/10'}`}>
         <div className="min-w-[36px] w-9 h-9 rounded-full bg-accent flex items-center justify-center font-display italic text-[15px] font-bold text-white shadow-[0_0_10px_rgba(0,121,98,0.5)]">RR</div>
         <div className="w-px h-5 bg-stroke mx-2 shrink-0" />
         <div className="flex items-center space-x-1 shrink-0">
@@ -187,12 +187,12 @@ const Partners = () => {
   ];
 
   return (
-    <div className="py-8 md:py-12 border-y border-stroke/20 overflow-hidden bg-gray-50 relative z-20">
+    <div className="py-8 md:py-12 border-y border-stroke/20 overflow-x-auto no-scrollbar cursor-grab active:cursor-grabbing bg-gray-50 relative z-20 group">
       <p className="text-center text-[10px] md:text-xs tracking-[0.2em] text-gray-500 font-semibold uppercase mb-6">Parceiros & Convênios</p>
       <div className="overflow-hidden">
-        <div className="flex items-center w-max marquee-left" style={{ animationDuration: '25s' }}>
+        <div className="flex items-center w-max marquee-left group-hover:![animation-play-state:paused] group-active:![animation-play-state:paused]" style={{ animationDuration: '25s' }}>
           {[...logos, ...logos, ...logos, ...logos].map((logo, i) => (
-             <img key={i} src={logo} alt="Parceiro" className="h-6 sm:h-8 md:h-10 object-contain opacity-70 hover:opacity-100 transition-opacity duration-300 mix-blend-multiply mx-6 md:mx-12" />
+             <img key={i} src={logo} alt="Parceiro" className="h-10 sm:h-14 md:h-16 object-contain opacity-70 hover:opacity-100 transition-opacity duration-300 mix-blend-multiply mx-8 md:mx-16" />
           ))}
         </div>
       </div>
@@ -462,14 +462,14 @@ const Depoimentos = () => {
         />
       </div>
 
-      <div className="relative z-10 flex flex-col gap-6 -mx-4 md:mx-0 pb-8 group">
+      <div className="relative z-10 flex flex-col gap-6 -mx-4 md:mx-0 pb-8 group touch-pan-y">
         {/* Sombras laterais para o degradê no marquee */}
         <div className="absolute inset-y-0 left-0 w-16 md:w-32 bg-gradient-to-r from-surface to-transparent z-20 pointer-events-none" />
         <div className="absolute inset-y-0 right-0 w-16 md:w-32 bg-gradient-to-l from-surface to-transparent z-20 pointer-events-none" />
 
         {/* Row 1 (Esquerda) */}
-        <div className="overflow-hidden py-4">
-          <div className="flex items-center w-max marquee-left group-hover:![animation-play-state:paused]">
+        <div className="overflow-x-auto no-scrollbar cursor-grab active:cursor-grabbing py-4">
+          <div className="flex items-center w-max marquee-left group-hover:![animation-play-state:paused] group-active:![animation-play-state:paused]">
             {[...row1, ...row1, ...row1, ...row1].map((r, i) => (
               <ReviewCard key={`r1-${i}`} r={r} />
             ))}
@@ -477,8 +477,8 @@ const Depoimentos = () => {
         </div>
 
         {/* Row 2 (Direita) */}
-        <div className="overflow-hidden py-4">
-          <div className="flex items-center w-max marquee-right group-hover:![animation-play-state:paused]">
+        <div className="overflow-x-auto no-scrollbar cursor-grab active:cursor-grabbing py-4">
+          <div className="flex items-center w-max marquee-right group-hover:![animation-play-state:paused] group-active:![animation-play-state:paused]">
             {[...row2, ...row2, ...row2, ...row2].map((r, i) => (
               <ReviewCard key={`r2-${i}`} r={r} />
             ))}
