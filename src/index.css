@@ -17,15 +17,28 @@
   }
 }
 
-/* Force Light Mode Context - Anti-Dark Mode Hack */
+/* Force Specific Colors - Anti-Auto-Darkening */
+:root {
+  color-scheme: light !important; /* Mesmo sendo escuro, o contexto deve ser light para o browser não inverter */
+  --bg-color: #01130C;
+  --text-color: #FFFFFF;
+}
+
+html, body {
+  background-color: var(--bg-color) !important;
+  color: var(--text-color) !important;
+}
+
 @media (prefers-color-scheme: dark) {
-  :root {
-    color-scheme: light;
+  html {
+    filter: none !important;
   }
 }
 
-* {
-  -webkit-tap-highlight-color: transparent;
+/* Evita que navegadores Samsung/Android invertam cores de imagens ou logos */
+img, video, iframe {
+  filter: none !important;
+  background-color: transparent !important;
 }
 
 @layer utilities {
